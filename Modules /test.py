@@ -1,7 +1,7 @@
-a = (input("Enter an number"))
-b = bool(a)
-print("You entered: " + str(b))
+import os
+folders = input("Enter folder names: ").split
+for folder in folders:
+    print(folder)
 
-res = not b
-
-print(res)
+    files = os.listdir(folder)
+    print(files)
